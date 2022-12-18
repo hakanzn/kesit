@@ -125,7 +125,7 @@ Min Threshold: <span id="minthres_b">50</span>&nbsp;&nbsp<a href="#" onclick="re
 </div>
 <div class="slidecontainer">
 Max Threshold: <span id="maxthres_b">255</span>&nbsp;&nbsp<a href="#" onclick="return bilgiler(this.parentNode)">(?)</a>
-<input type="range" min="80" max="255" value="255" class="slider" id="maxthres">
+<input type="range" min="0" max="255" value="255" class="slider" id="maxthres">
 </div>
 
 <div class="slidecontainer">
@@ -145,7 +145,7 @@ Dilate: <span id="dilate_b">0</span>&nbsp;&nbsp<a href="#" onclick="return bilgi
 <button style="display:block;left:65%;top:85%" onclick="rect_ciz(this)" class="button" id="rectciz">.....</button>
 
 <script>
-minth=50;
+minth=0;
 maxth=255;
 function sablon_al(btn){
 	  if(!ilkresim){
