@@ -126,7 +126,7 @@ function kenar(src){
     //cv.threshold(src,src,minth,255,siyah_hat ? cv.THRESH_BINARY_INV : cv.THRESH_BINARY);
     let low = new cv.Mat(src.rows, src.cols, src.type(), [minth, minth, minth, 0]);
     let high = new cv.Mat(src.rows, src.cols, src.type(), [maxth, maxth, maxth, 255]);
-    cv.inRange(scr, low, high, src);
+    cv.inRange(src, low, high, src);
     if(parseInt(erode.value)>0){
     	   erozyon(src,src,parseInt(erode.value));
     }
