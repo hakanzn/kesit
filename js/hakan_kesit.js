@@ -222,7 +222,7 @@ function kenar(src){
  
     cv.imshow('canvasout', dst2);
     //hafiza bosalt. insallah olur
-    dst2.delete();   contours.delete(); hierarchy.delete();
+    dst2.delete();   low.delete(); high.delete(); contours.delete(); hierarchy.delete();
 }
 function hafiza(){
     hfz=window.performance.memory;
