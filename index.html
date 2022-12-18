@@ -221,7 +221,7 @@ function bilgiler(yardim){
 <script>
 var track;
 var akis;
-navigator.mediaDevices.getUserMedia({ video: {height: { min: 604, ideal: 1920, max: 1920 }, width: { min: 340, ideal: 1080 }, aspectRatio: 1.0, frameRate: { max: 10 }, focusMode: 'none', facingMode: { exact: 'user' } }, audio: false }) 
+navigator.mediaDevices.getUserMedia({ video: {height: { min: 604, ideal: 1920, max: 1920 }, width: { min: 340, ideal: 1080 }, aspectRatio: 1.0, frameRate: { max: 10 }, focusMode: 'none', facingMode: { exact: 'environment' } }, audio: false }) 
 .then(function(stream) { 	 
 	akis = stream; 	 
 	video.srcObject = stream; 	 
